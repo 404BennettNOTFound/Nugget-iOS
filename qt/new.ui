@@ -412,7 +412,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Home</string>
+             <string>主页</string>
             </property>
             <property name="icon">
              <iconset>
@@ -447,7 +447,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Explore</string>
+             <string>探索</string>
             </property>
             <property name="icon">
              <iconset>
@@ -535,7 +535,7 @@ QSlider::tick:horizontal {
              </font>
             </property>
             <property name="text">
-             <string>    Feature Flags</string>
+             <string>特殊功能</string>
             </property>
             <property name="icon">
              <iconset>
@@ -564,7 +564,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Eligibility</string>
+             <string>地区修改</string>
             </property>
             <property name="icon">
              <iconset>
@@ -593,7 +593,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Springboard Options</string>
+             <string>    Springboard 设置</string>
             </property>
             <property name="icon">
              <iconset>
@@ -622,7 +622,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Internal Options</string>
+             <string>内部设置</string>
             </property>
             <property name="icon">
              <iconset>
@@ -651,7 +651,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Risky Options</string>
+             <string>高风险功能</string>
             </property>
             <property name="icon">
              <iconset>
@@ -695,7 +695,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Apply</string>
+             <string>应用</string>
             </property>
             <property name="icon">
              <iconset>
@@ -724,7 +724,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>    Settings</string>
+             <string>设置</string>
             </property>
             <property name="icon">
              <iconset>
@@ -787,7 +787,7 @@ QSlider::tick:horizontal {
           <item>
            <widget class="QStackedWidget" name="pages">
             <property name="currentIndex">
-             <number>12</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="homePage">
              <property name="font">
@@ -1286,7 +1286,7 @@ QToolButton:pressed {
 }</string>
                       </property>
                       <property name="text">
-                       <string>Main Developer</string>
+                       <string>主开发者</string>
                       </property>
                      </widget>
                     </item>
@@ -1360,7 +1360,7 @@ QToolButton:pressed {
 }</string>
                       </property>
                       <property name="text">
-                       <string>With Help From</string>
+                       <string>功能实现</string>
                       </property>
                       <property name="toolButtonStyle">
                        <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -1505,7 +1505,7 @@ EU Enabler</string>
 }</string>
                       </property>
                       <property name="text">
-                       <string>Additional Thanks</string>
+                       <string>特别感谢</string>
                       </property>
                      </widget>
                     </item>

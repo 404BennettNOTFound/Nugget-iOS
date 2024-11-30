@@ -302,7 +302,7 @@ class Ui_Nugget(object):
         self.homePageBtn.setCheckable(True)
         self.homePageBtn.setChecked(True)
         self.homePageBtn.setAutoExclusive(True)
-        self.homePageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.homePageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.homePageBtn)
 
@@ -316,7 +316,7 @@ class Ui_Nugget(object):
         self.explorePageBtn.setIcon(icon3)
         self.explorePageBtn.setCheckable(True)
         self.explorePageBtn.setAutoExclusive(True)
-        self.explorePageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.explorePageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.explorePageBtn)
 
@@ -325,8 +325,8 @@ class Ui_Nugget(object):
         self.sidebarDiv1.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.sidebarDiv1.setFrameShadow(QFrame.Plain)
-        self.sidebarDiv1.setFrameShape(QFrame.Shape.HLine)
+        self.sidebarDiv1.setFrameShape(QFrame.Shape.VLine)
+        self.sidebarDiv1.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout.addWidget(self.sidebarDiv1)
 
@@ -340,7 +340,7 @@ class Ui_Nugget(object):
         self.gestaltPageBtn.setIconSize(QSize(24, 28))
         self.gestaltPageBtn.setCheckable(True)
         self.gestaltPageBtn.setAutoExclusive(True)
-        self.gestaltPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.gestaltPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
         self.gestaltPageBtn.setArrowType(Qt.NoArrow)
 
         self.verticalLayout.addWidget(self.gestaltPageBtn)
@@ -357,7 +357,7 @@ class Ui_Nugget(object):
         self.featureFlagsPageBtn.setIcon(icon5)
         self.featureFlagsPageBtn.setCheckable(True)
         self.featureFlagsPageBtn.setAutoExclusive(True)
-        self.featureFlagsPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.featureFlagsPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.featureFlagsPageBtn)
 
@@ -370,7 +370,7 @@ class Ui_Nugget(object):
         self.euEnablerPageBtn.setIcon(icon6)
         self.euEnablerPageBtn.setCheckable(True)
         self.euEnablerPageBtn.setAutoExclusive(True)
-        self.euEnablerPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.euEnablerPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.euEnablerPageBtn)
 
@@ -383,7 +383,7 @@ class Ui_Nugget(object):
         self.springboardOptionsPageBtn.setIcon(icon7)
         self.springboardOptionsPageBtn.setCheckable(True)
         self.springboardOptionsPageBtn.setAutoExclusive(True)
-        self.springboardOptionsPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.springboardOptionsPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.springboardOptionsPageBtn)
 
@@ -396,7 +396,7 @@ class Ui_Nugget(object):
         self.internalOptionsPageBtn.setIcon(icon8)
         self.internalOptionsPageBtn.setCheckable(True)
         self.internalOptionsPageBtn.setAutoExclusive(True)
-        self.internalOptionsPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.internalOptionsPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.internalOptionsPageBtn)
 
@@ -409,7 +409,7 @@ class Ui_Nugget(object):
         self.advancedPageBtn.setIcon(icon9)
         self.advancedPageBtn.setCheckable(True)
         self.advancedPageBtn.setAutoExclusive(True)
-        self.advancedPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.advancedPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.advancedPageBtn)
 
@@ -418,8 +418,8 @@ class Ui_Nugget(object):
         self.sidebarDiv2.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.sidebarDiv2.setFrameShadow(QFrame.Plain)
-        self.sidebarDiv2.setFrameShape(QFrame.Shape.HLine)
+        self.sidebarDiv2.setFrameShape(QFrame.Shape.VLine)
+        self.sidebarDiv2.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout.addWidget(self.sidebarDiv2)
 
@@ -432,7 +432,7 @@ class Ui_Nugget(object):
         self.applyPageBtn.setIcon(icon10)
         self.applyPageBtn.setCheckable(True)
         self.applyPageBtn.setAutoExclusive(True)
-        self.applyPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.applyPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.applyPageBtn)
 
@@ -445,11 +445,11 @@ class Ui_Nugget(object):
         self.settingsPageBtn.setIcon(icon11)
         self.settingsPageBtn.setCheckable(True)
         self.settingsPageBtn.setAutoExclusive(True)
-        self.settingsPageBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.settingsPageBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.verticalLayout.addWidget(self.settingsPageBtn)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout.addItem(self.verticalSpacer)
 
@@ -512,7 +512,7 @@ class Ui_Nugget(object):
         self.phoneVersionLbl = QLabel(self.verticalWidget)
         self.phoneVersionLbl.setObjectName(u"phoneVersionLbl")
         self.phoneVersionLbl.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.phoneVersionLbl.setTextFormat(Qt.RichText)
+        self.phoneVersionLbl.setTextFormat(Qt.PlainText)
         self.phoneVersionLbl.setOpenExternalLinks(False)
 
         self.verticalLayout_3.addWidget(self.phoneVersionLbl)
@@ -532,8 +532,8 @@ class Ui_Nugget(object):
         self.line_4.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_4.setFrameShadow(QFrame.Plain)
-        self.line_4.setFrameShape(QFrame.Shape.HLine)
+        self.line_4.setFrameShape(QFrame.Shape.VLine)
+        self.line_4.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_2.addWidget(self.line_4)
 
@@ -565,7 +565,7 @@ class Ui_Nugget(object):
         self.verticalLayout_26 = QVBoxLayout(self.verticalWidget1)
         self.verticalLayout_26.setObjectName(u"verticalLayout_26")
         self.verticalLayout_26.setContentsMargins(0, 0, 0, 0)
-        self.verticalSpacer_11 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_11 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_26.addItem(self.verticalSpacer_11)
 
@@ -577,11 +577,10 @@ class Ui_Nugget(object):
         self.label_2.setStyleSheet(u"QLabel {\n"
 "	font-size: 35px;\n"
 "}")
-        self.label_2.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_26.addWidget(self.label_2)
 
-        self.verticalSpacer_12 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_12 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_26.addItem(self.verticalSpacer_12)
 
@@ -593,21 +592,21 @@ class Ui_Nugget(object):
         icon13 = QIcon()
         icon13.addFile(u":/icon/discord.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.discordBtn.setIcon(icon13)
-        self.discordBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.discordBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_8.addWidget(self.discordBtn)
 
         self.starOnGithubBtn = QToolButton(self.verticalWidget1)
         self.starOnGithubBtn.setObjectName(u"starOnGithubBtn")
         self.starOnGithubBtn.setIcon(icon9)
-        self.starOnGithubBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.starOnGithubBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_8.addWidget(self.starOnGithubBtn)
 
 
         self.verticalLayout_26.addLayout(self.horizontalLayout_8)
 
-        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_26.addItem(self.verticalSpacer_4)
 
@@ -644,7 +643,7 @@ class Ui_Nugget(object):
         icon14 = QIcon()
         icon14.addFile(u":/credits/LeminLimez.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.leminBtn.setIcon(icon14)
-        self.leminBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.leminBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_6.addWidget(self.leminBtn)
 
@@ -721,14 +720,14 @@ class Ui_Nugget(object):
 
         self.horizontalLayout_6.addWidget(self.toolButton_14)
 
-        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_6.addItem(self.horizontalSpacer_5)
 
 
         self.verticalLayout_25.addWidget(self.horizontalWidget2)
 
-        self.verticalSpacer_16 = QSpacerItem(20, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_16 = QSpacerItem(20, 10, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_25.addItem(self.verticalSpacer_16)
 
@@ -745,7 +744,7 @@ class Ui_Nugget(object):
         self.helpFromBtn.setStyleSheet(u"QToolButton {\n"
 "	background: none;\n"
 "}")
-        self.helpFromBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.helpFromBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_2.addWidget(self.helpFromBtn)
 
@@ -871,7 +870,6 @@ class Ui_Nugget(object):
 
         self.label = QLabel(self.homePage)
         self.label.setObjectName(u"label")
-        self.label.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
         self.verticalLayout_2.addWidget(self.label)
 
@@ -914,7 +912,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_5.addWidget(self.statusBarLbl)
 
-        self.verticalSpacer_8 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_8 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_5.addItem(self.verticalSpacer_8)
 
@@ -933,8 +931,8 @@ class Ui_Nugget(object):
         self.line_8.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_8.setFrameShadow(QFrame.Plain)
-        self.line_8.setFrameShape(QFrame.Shape.HLine)
+        self.line_8.setFrameShape(QFrame.Shape.VLine)
+        self.line_8.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_4.addWidget(self.line_8)
 
@@ -947,9 +945,8 @@ class Ui_Nugget(object):
         self.scrollArea = QScrollArea(self.gestaltPage)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setFrameShape(QFrame.NoFrame)
-        self.scrollArea.setFrameShadow(QFrame.Plain)
         self.scrollArea.setLineWidth(0)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 650, 1200))
@@ -1061,8 +1058,8 @@ class Ui_Nugget(object):
         self.line_7.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_7.setFrameShadow(QFrame.Plain)
-        self.line_7.setFrameShape(QFrame.Shape.HLine)
+        self.line_7.setFrameShape(QFrame.Shape.VLine)
+        self.line_7.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_8.addWidget(self.line_7)
 
@@ -1106,8 +1103,8 @@ class Ui_Nugget(object):
         self.line_9.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_9.setFrameShadow(QFrame.Plain)
-        self.line_9.setFrameShape(QFrame.Shape.HLine)
+        self.line_9.setFrameShape(QFrame.Shape.VLine)
+        self.line_9.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_8.addWidget(self.line_9)
 
@@ -1126,8 +1123,8 @@ class Ui_Nugget(object):
         self.line_10.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_10.setFrameShadow(QFrame.Plain)
-        self.line_10.setFrameShape(QFrame.Shape.HLine)
+        self.line_10.setFrameShape(QFrame.Shape.VLine)
+        self.line_10.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_8.addWidget(self.line_10)
 
@@ -1146,8 +1143,8 @@ class Ui_Nugget(object):
         self.line_22.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_22.setFrameShadow(QFrame.Plain)
-        self.line_22.setFrameShape(QFrame.Shape.HLine)
+        self.line_22.setFrameShape(QFrame.Shape.VLine)
+        self.line_22.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_8.addWidget(self.line_22)
 
@@ -1167,7 +1164,7 @@ class Ui_Nugget(object):
         icon18.addFile(u":/icon/plus.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.addGestaltKeyBtn.setIcon(icon18)
         self.addGestaltKeyBtn.setCheckable(False)
-        self.addGestaltKeyBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.addGestaltKeyBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_11.addWidget(self.addGestaltKeyBtn)
 
@@ -1184,8 +1181,8 @@ class Ui_Nugget(object):
         self.line_23.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_23.setFrameShadow(QFrame.Plain)
-        self.line_23.setFrameShape(QFrame.Shape.HLine)
+        self.line_23.setFrameShape(QFrame.Shape.VLine)
+        self.line_23.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_8.addWidget(self.line_23)
 
@@ -1202,7 +1199,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_8.addWidget(self.customKeysCnt)
 
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_8.addItem(self.verticalSpacer_3)
 
@@ -1251,7 +1248,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_12.addWidget(self.internalOptionsLbl)
 
-        self.verticalSpacer_15 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_15 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_12.addItem(self.verticalSpacer_15)
 
@@ -1270,8 +1267,8 @@ class Ui_Nugget(object):
         self.line_12.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_12.setFrameShadow(QFrame.Plain)
-        self.line_12.setFrameShape(QFrame.Shape.HLine)
+        self.line_12.setFrameShape(QFrame.Shape.VLine)
+        self.line_12.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_14.addWidget(self.line_12)
 
@@ -1297,8 +1294,8 @@ class Ui_Nugget(object):
         self.div.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.div.setFrameShadow(QFrame.Plain)
-        self.div.setFrameShape(QFrame.Shape.HLine)
+        self.div.setFrameShape(QFrame.Shape.VLine)
+        self.div.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_13.addWidget(self.div)
 
@@ -1312,7 +1309,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_13.addWidget(self.aiChk)
 
-        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_13.addItem(self.verticalSpacer_6)
 
@@ -1357,7 +1354,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_15.addWidget(self.eligibilityLbl)
 
-        self.verticalSpacer_20 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_20 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_15.addItem(self.verticalSpacer_20)
 
@@ -1376,8 +1373,8 @@ class Ui_Nugget(object):
         self.line_13.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_13.setFrameShadow(QFrame.Plain)
-        self.line_13.setFrameShape(QFrame.Shape.HLine)
+        self.line_13.setFrameShape(QFrame.Shape.VLine)
+        self.line_13.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_17.addWidget(self.line_13)
 
@@ -1458,8 +1455,8 @@ class Ui_Nugget(object):
         self.line_16.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_16.setFrameShadow(QFrame.Plain)
-        self.line_16.setFrameShape(QFrame.Shape.HLine)
+        self.line_16.setFrameShape(QFrame.Shape.VLine)
+        self.line_16.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_36.addWidget(self.line_16)
 
@@ -1502,8 +1499,8 @@ class Ui_Nugget(object):
         self.line_21.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_21.setFrameShadow(QFrame.Plain)
-        self.line_21.setFrameShape(QFrame.Shape.HLine)
+        self.line_21.setFrameShape(QFrame.Shape.VLine)
+        self.line_21.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_34.addWidget(self.line_21)
 
@@ -1512,7 +1509,7 @@ class Ui_Nugget(object):
         sizePolicy1.setHeightForWidth(self.aiInfoLabel.sizePolicy().hasHeightForWidth())
         self.aiInfoLabel.setSizePolicy(sizePolicy1)
         self.aiInfoLabel.setMaximumSize(QSize(16777215, 16777215))
-        self.aiInfoLabel.setTextFormat(Qt.AutoText)
+        self.aiInfoLabel.setTextFormat(Qt.PlainText)
         self.aiInfoLabel.setScaledContents(False)
 
         self.verticalLayout_34.addWidget(self.aiInfoLabel)
@@ -1590,7 +1587,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_16.addWidget(self.aiEnablerContent)
 
-        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_16.addItem(self.verticalSpacer_7)
 
@@ -1635,7 +1632,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_7.addWidget(self.springboardOptionsLbl)
 
-        self.verticalSpacer_19 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_19 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_7.addItem(self.verticalSpacer_19)
 
@@ -1654,8 +1651,8 @@ class Ui_Nugget(object):
         self.line_11.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_11.setFrameShadow(QFrame.Plain)
-        self.line_11.setFrameShape(QFrame.Shape.HLine)
+        self.line_11.setFrameShape(QFrame.Shape.VLine)
+        self.line_11.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_10.addWidget(self.line_11)
 
@@ -1681,8 +1678,8 @@ class Ui_Nugget(object):
         self.line_6.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_6.setFrameShadow(QFrame.Plain)
-        self.line_6.setFrameShape(QFrame.Shape.HLine)
+        self.line_6.setFrameShape(QFrame.Shape.VLine)
+        self.line_6.setFrameShadow(QFrame.Shadow.Sunken)
 
         self._2.addWidget(self.line_6)
 
@@ -1716,7 +1713,7 @@ class Ui_Nugget(object):
 
         self._2.addWidget(self.enableAirPlayChk)
 
-        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self._2.addItem(self.verticalSpacer_5)
 
@@ -1761,7 +1758,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_121.addWidget(self.internalOptionsLbl1)
 
-        self.verticalSpacer_18 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_18 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_121.addItem(self.verticalSpacer_18)
 
@@ -1780,8 +1777,8 @@ class Ui_Nugget(object):
         self.line_121.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_121.setFrameShadow(QFrame.Plain)
-        self.line_121.setFrameShape(QFrame.Shape.HLine)
+        self.line_121.setFrameShape(QFrame.Shape.VLine)
+        self.line_121.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_141.addWidget(self.line_121)
 
@@ -1807,8 +1804,8 @@ class Ui_Nugget(object):
         self.div1.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.div1.setFrameShadow(QFrame.Plain)
-        self.div1.setFrameShape(QFrame.Shape.HLine)
+        self.div1.setFrameShape(QFrame.Shape.VLine)
+        self.div1.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_131.addWidget(self.div1)
 
@@ -1837,8 +1834,8 @@ class Ui_Nugget(object):
         self.line_17.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_17.setFrameShadow(QFrame.Plain)
-        self.line_17.setFrameShape(QFrame.Shape.HLine)
+        self.line_17.setFrameShape(QFrame.Shape.VLine)
+        self.line_17.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_131.addWidget(self.line_17)
 
@@ -1857,8 +1854,8 @@ class Ui_Nugget(object):
         self.line_18.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_18.setFrameShadow(QFrame.Plain)
-        self.line_18.setFrameShape(QFrame.Shape.HLine)
+        self.line_18.setFrameShape(QFrame.Shape.VLine)
+        self.line_18.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_131.addWidget(self.line_18)
 
@@ -1882,8 +1879,8 @@ class Ui_Nugget(object):
         self.line_19.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_19.setFrameShadow(QFrame.Plain)
-        self.line_19.setFrameShape(QFrame.Shape.HLine)
+        self.line_19.setFrameShape(QFrame.Shape.VLine)
+        self.line_19.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_131.addWidget(self.line_19)
 
@@ -1897,7 +1894,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_131.addWidget(self.notifyPastesChk)
 
-        self.verticalSpacer_61 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_61 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_131.addItem(self.verticalSpacer_61)
 
@@ -1942,7 +1939,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_122.addWidget(self.advancedOptionsLbl)
 
-        self.verticalSpacer_181 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_181 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_122.addItem(self.verticalSpacer_181)
 
@@ -1961,8 +1958,8 @@ class Ui_Nugget(object):
         self.line_122.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_122.setFrameShadow(QFrame.Plain)
-        self.line_122.setFrameShape(QFrame.Shape.HLine)
+        self.line_122.setFrameShape(QFrame.Shape.VLine)
+        self.line_122.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_142.addWidget(self.line_122)
 
@@ -1974,6 +1971,9 @@ class Ui_Nugget(object):
         self.verticalLayout_132.setContentsMargins(0, 0, 0, 0)
         self.label_17 = QLabel(self.advancedOptionsPageContent)
         self.label_17.setObjectName(u"label_17")
+        font3 = QFont()
+        font3.setFamilies([u"\u5b8b\u4f53"])
+        self.label_17.setFont(font3)
 
         self.verticalLayout_132.addWidget(self.label_17)
 
@@ -1982,8 +1982,8 @@ class Ui_Nugget(object):
         self.line_191.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_191.setFrameShadow(QFrame.Plain)
-        self.line_191.setFrameShape(QFrame.Shape.HLine)
+        self.line_191.setFrameShape(QFrame.Shape.VLine)
+        self.line_191.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_132.addWidget(self.line_191)
 
@@ -1997,8 +1997,8 @@ class Ui_Nugget(object):
         self.line_181.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_181.setFrameShadow(QFrame.Plain)
-        self.line_181.setFrameShape(QFrame.Shape.HLine)
+        self.line_181.setFrameShape(QFrame.Shape.VLine)
+        self.line_181.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_132.addWidget(self.line_181)
 
@@ -2037,9 +2037,7 @@ class Ui_Nugget(object):
 "		color: red;\n"
 "}")
         self.resHeightWarningLbl.setFrameShape(QFrame.NoFrame)
-        self.resHeightWarningLbl.setFrameShadow(QFrame.Plain)
         self.resHeightWarningLbl.setScaledContents(False)
-        self.resHeightWarningLbl.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_9.addWidget(self.resHeightWarningLbl)
 
@@ -2070,7 +2068,6 @@ class Ui_Nugget(object):
 "		border-radius: 25px;\n"
 "		color: red;\n"
 "}")
-        self.resWidthWarningLbl.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_10.addWidget(self.resWidthWarningLbl)
 
@@ -2083,7 +2080,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_132.addWidget(self.resChangerContent)
 
-        self.verticalSpacer_62 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_62 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_132.addItem(self.verticalSpacer_62)
 
@@ -2153,24 +2150,22 @@ class Ui_Nugget(object):
         self.line_5.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_5.setFrameShadow(QFrame.Plain)
-        self.line_5.setFrameShape(QFrame.Shape.HLine)
+        self.line_5.setFrameShape(QFrame.Shape.VLine)
+        self.line_5.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_24.addWidget(self.line_5)
 
-        self.verticalSpacer_10 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_10 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_24.addItem(self.verticalSpacer_10)
 
         self.modifiedTweaksLbl = QLabel(self.verticalWidget2)
         self.modifiedTweaksLbl.setObjectName(u"modifiedTweaksLbl")
-        self.modifiedTweaksLbl.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_24.addWidget(self.modifiedTweaksLbl)
 
         self.gestaltLocationLbl = QLabel(self.verticalWidget2)
         self.gestaltLocationLbl.setObjectName(u"gestaltLocationLbl")
-        self.gestaltLocationLbl.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_24.addWidget(self.gestaltLocationLbl)
 
@@ -2182,7 +2177,7 @@ class Ui_Nugget(object):
         icon19 = QIcon()
         icon19.addFile(u":/icon/folder.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.chooseGestaltBtn.setIcon(icon19)
-        self.chooseGestaltBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.chooseGestaltBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_7.addWidget(self.chooseGestaltBtn)
 
@@ -2197,7 +2192,7 @@ class Ui_Nugget(object):
         self.applyTweaksBtn = QToolButton(self.horizontalWidget4)
         self.applyTweaksBtn.setObjectName(u"applyTweaksBtn")
         self.applyTweaksBtn.setIcon(icon10)
-        self.applyTweaksBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.applyTweaksBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
         self.horizontalLayout_17.addWidget(self.applyTweaksBtn)
 
@@ -2206,7 +2201,6 @@ class Ui_Nugget(object):
 
         self.statusLbl = QLabel(self.verticalWidget2)
         self.statusLbl.setObjectName(u"statusLbl")
-        self.statusLbl.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_24.addWidget(self.statusLbl)
 
@@ -2216,11 +2210,10 @@ class Ui_Nugget(object):
         self.restoreProgressBar.setSizePolicy(sizePolicy)
         self.restoreProgressBar.setMinimumSize(QSize(150, 0))
         self.restoreProgressBar.setValue(0)
-        self.restoreProgressBar.setAlignment(Qt.AlignCenter)
 
-        self.verticalLayout_24.addWidget(self.restoreProgressBar, 0, Qt.AlignHCenter)
+        self.verticalLayout_24.addWidget(self.restoreProgressBar)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_24.addItem(self.verticalSpacer_2)
 
@@ -2291,7 +2284,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_71.addWidget(self.springboardOptionsLbl1)
 
-        self.verticalSpacer_17 = QSpacerItem(20, 16, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_17 = QSpacerItem(20, 16, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_71.addItem(self.verticalSpacer_17)
 
@@ -2310,8 +2303,8 @@ class Ui_Nugget(object):
         self.line_111.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_111.setFrameShadow(QFrame.Plain)
-        self.line_111.setFrameShape(QFrame.Shape.HLine)
+        self.line_111.setFrameShape(QFrame.Shape.VLine)
+        self.line_111.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_101.addWidget(self.line_111)
 
@@ -2344,8 +2337,8 @@ class Ui_Nugget(object):
         self.line_24.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_24.setFrameShadow(QFrame.Plain)
-        self.line_24.setFrameShape(QFrame.Shape.HLine)
+        self.line_24.setFrameShape(QFrame.Shape.VLine)
+        self.line_24.setFrameShadow(QFrame.Shadow.Sunken)
 
         self._21.addWidget(self.line_24)
 
@@ -2367,7 +2360,7 @@ class Ui_Nugget(object):
 
         self._21.addWidget(self.supervisionOrganization)
 
-        self.verticalSpacer_21 = QSpacerItem(20, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalSpacer_21 = QSpacerItem(20, 10, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self._21.addItem(self.verticalSpacer_21)
 
@@ -2381,8 +2374,8 @@ class Ui_Nugget(object):
         self.line_20.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_20.setFrameShadow(QFrame.Plain)
-        self.line_20.setFrameShape(QFrame.Shape.HLine)
+        self.line_20.setFrameShape(QFrame.Shape.VLine)
+        self.line_20.setFrameShadow(QFrame.Shadow.Sunken)
 
         self._21.addWidget(self.line_20)
 
@@ -2397,7 +2390,7 @@ class Ui_Nugget(object):
 
         self._21.addLayout(self.deviceSettingsBtns)
 
-        self.verticalSpacer_51 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_51 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self._21.addItem(self.verticalSpacer_51)
 
@@ -2467,12 +2460,12 @@ class Ui_Nugget(object):
         self.line_2.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_2.setFrameShadow(QFrame.Plain)
-        self.line_2.setFrameShape(QFrame.Shape.HLine)
+        self.line_2.setFrameShape(QFrame.Shape.VLine)
+        self.line_2.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_28.addWidget(self.line_2)
 
-        self.verticalSpacer_14 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_14 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_28.addItem(self.verticalSpacer_14)
 
@@ -2488,25 +2481,21 @@ class Ui_Nugget(object):
         self.verticalLayout_29.setContentsMargins(0, 0, 0, 0)
         self.label_7 = QLabel(self.verticalWidget3)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_29.addWidget(self.label_7)
 
         self.latitudeTxt = QLineEdit(self.verticalWidget3)
         self.latitudeTxt.setObjectName(u"latitudeTxt")
-        self.latitudeTxt.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_29.addWidget(self.latitudeTxt)
 
         self.label_11 = QLabel(self.verticalWidget3)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_29.addWidget(self.label_11)
 
         self.longitudeTxt = QLineEdit(self.verticalWidget3)
         self.longitudeTxt.setObjectName(u"longitudeTxt")
-        self.longitudeTxt.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_29.addWidget(self.longitudeTxt)
 
@@ -2542,7 +2531,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_28.addWidget(self.locSimCnt)
 
-        self.verticalSpacer_13 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_13 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_28.addItem(self.verticalSpacer_13)
 
@@ -2607,8 +2596,8 @@ class Ui_Nugget(object):
         self.line_14.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_14.setFrameShadow(QFrame.Plain)
-        self.line_14.setFrameShape(QFrame.Shape.HLine)
+        self.line_14.setFrameShape(QFrame.Shape.VLine)
+        self.line_14.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_20.addWidget(self.line_14)
 
@@ -2633,9 +2622,9 @@ class Ui_Nugget(object):
         icon21.addFile(u":/icon/import.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.importOperationBtn.setIcon(icon21)
         self.importOperationBtn.setIconSize(QSize(20, 20))
-        self.importOperationBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.importOperationBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
-        self.customOpsTopBtns.addWidget(self.importOperationBtn, 0, Qt.AlignLeft)
+        self.customOpsTopBtns.addWidget(self.importOperationBtn)
 
         self.newOperationBtn = QToolButton(self.customOperationsPageContent)
         self.newOperationBtn.setObjectName(u"newOperationBtn")
@@ -2647,9 +2636,9 @@ class Ui_Nugget(object):
         self.newOperationBtn.setIconSize(QSize(16, 16))
         self.newOperationBtn.setCheckable(False)
         self.newOperationBtn.setAutoExclusive(True)
-        self.newOperationBtn.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.newOperationBtn.setToolButtonStyle(Qt.ToolButtonIconOnly)
 
-        self.customOpsTopBtns.addWidget(self.newOperationBtn, 0, Qt.AlignLeft)
+        self.customOpsTopBtns.addWidget(self.newOperationBtn)
 
 
         self.verticalLayout_19.addLayout(self.customOpsTopBtns)
@@ -2726,8 +2715,8 @@ class Ui_Nugget(object):
         self.line_3.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_3.setFrameShadow(QFrame.Plain)
-        self.line_3.setFrameShape(QFrame.Shape.HLine)
+        self.line_3.setFrameShape(QFrame.Shape.VLine)
+        self.line_3.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_31.addWidget(self.line_3)
 
@@ -2823,8 +2812,8 @@ class Ui_Nugget(object):
         self.line_15.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line_15.setFrameShadow(QFrame.Plain)
-        self.line_15.setFrameShape(QFrame.Shape.HLine)
+        self.line_15.setFrameShape(QFrame.Shape.VLine)
+        self.line_15.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_23.addWidget(self.line_15)
 
@@ -2844,8 +2833,8 @@ class Ui_Nugget(object):
         self.line.setStyleSheet(u"QFrame {\n"
 "	color: #414141;\n"
 "}")
-        self.line.setFrameShadow(QFrame.Plain)
-        self.line.setFrameShape(QFrame.Shape.HLine)
+        self.line.setFrameShape(QFrame.Shape.VLine)
+        self.line.setFrameShadow(QFrame.Shadow.Sunken)
 
         self.verticalLayout_22.addWidget(self.line)
 
@@ -2859,7 +2848,7 @@ class Ui_Nugget(object):
 
         self.verticalLayout_22.addWidget(self.iconsCnt)
 
-        self.verticalSpacer_9 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_9 = QSpacerItem(20, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.verticalLayout_22.addItem(self.verticalSpacer_9)
 
@@ -2910,7 +2899,7 @@ class Ui_Nugget(object):
         self.retranslateUi(Nugget)
 
         self.devicePicker.setCurrentIndex(-1)
-        self.pages.setCurrentIndex(12)
+        self.pages.setCurrentIndex(6)
         self.dynamicIslandDrp.setCurrentIndex(0)
         self.spoofedModelDrp.setCurrentIndex(0)
 
@@ -2924,111 +2913,108 @@ class Ui_Nugget(object):
         self.devicePicker.setPlaceholderText(QCoreApplication.translate("Nugget", u"None", None))
         self.refreshBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"btn", None))
         self.titleBar.setText(QCoreApplication.translate("Nugget", u"Nugget", None))
-        self.homePageBtn.setText(QCoreApplication.translate("Nugget", u"    Home", None))
+        self.homePageBtn.setText(QCoreApplication.translate("Nugget", u"\u4e3b\u9875", None))
         self.homePageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.explorePageBtn.setText(QCoreApplication.translate("Nugget", u"    Explore", None))
+        self.explorePageBtn.setText(QCoreApplication.translate("Nugget", u"\u63a2\u7d22", None))
         self.explorePageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.gestaltPageBtn.setText(QCoreApplication.translate("Nugget", u"     Mobile Gestalt", None))
+        self.gestaltPageBtn.setText(QCoreApplication.translate("Nugget", u"     Mobile Gestalt(\u5f00\u5c9b\u4e4b\u7c7b\u8fd9\u91cc\u770b~)", None))
         self.gestaltPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.featureFlagsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Feature Flags", None))
+        self.featureFlagsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u7279\u6b8a\u529f\u80fd", None))
         self.featureFlagsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.euEnablerPageBtn.setText(QCoreApplication.translate("Nugget", u"    Eligibility", None))
+        self.euEnablerPageBtn.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u5907\u4fe1\u606f\u4f2a\u9020(\u5f00AI\u7684\u770b\u770b\u8fd9\u91cc~)", None))
         self.euEnablerPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.springboardOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Springboard Options", None))
+        self.springboardOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Springboard\u8bbe\u7f6e", None))
         self.springboardOptionsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.internalOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Internal Options", None))
+        self.internalOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u5185\u7f6e\u529f\u80fd", None))
         self.internalOptionsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.advancedPageBtn.setText(QCoreApplication.translate("Nugget", u"    Risky Options", None))
+        self.advancedPageBtn.setText(QCoreApplication.translate("Nugget", u"\u9ad8\u98ce\u9669\u529f\u80fd", None))
         self.advancedPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.applyPageBtn.setText(QCoreApplication.translate("Nugget", u"    Apply", None))
+        self.applyPageBtn.setText(QCoreApplication.translate("Nugget", u"\u5e94\u7528", None))
         self.applyPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.settingsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Settings", None))
+        self.settingsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6e", None))
         self.settingsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.phoneNameLbl.setText(QCoreApplication.translate("Nugget", u"Phone", None))
-        self.phoneVersionLbl.setText(QCoreApplication.translate("Nugget", u"<a style=\"text-decoration:none; color: white\" href=\"#\">Version</a>", None))
+        self.phoneNameLbl.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u5907\u540d", None))
+        self.phoneVersionLbl.setText(QCoreApplication.translate("Nugget", u"<html><head/><body><p>iOS\u7248\u672c</p></body></html>", None))
         self.bigNuggetBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
         self.label_2.setText(QCoreApplication.translate("Nugget", u"Nugget", None))
-        self.discordBtn.setText(QCoreApplication.translate("Nugget", u" \u52a0\u5165 Discord", None))
+        self.discordBtn.setText(QCoreApplication.translate("Nugget", u"\u52a0\u5165Discord", None))
         self.starOnGithubBtn.setText(QCoreApplication.translate("Nugget", u"\u53bbGithub\u70b9\u4e2a\u661f\u661f\u5427", None))
         self.leminBtn.setText(QCoreApplication.translate("Nugget", u"  LeminLimez", None))
         self.leminTwitterBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
         self.leminGithubBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
         self.leminKoFiBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
-        self.toolButton_14.setText(QCoreApplication.translate("Nugget", u"Main Developer", None))
-        self.helpFromBtn.setText(QCoreApplication.translate("Nugget", u"With Help From", None))
+        self.toolButton_14.setText(QCoreApplication.translate("Nugget", u"\u4e3b\u5f00\u53d1\u8005", None))
+        self.helpFromBtn.setText(QCoreApplication.translate("Nugget", u"\u529f\u80fd\u5b9e\u73b0", None))
         self.jjtechBtn.setText(QCoreApplication.translate("Nugget", u"JJTech\n"
-"Sparserestore", None))
+"TrollStore", None))
         self.disfordottieBtn.setText(QCoreApplication.translate("Nugget", u"disfordottie\n"
-"Clock Anim, Photos UI", None))
+"\u65f6\u949f\u52a8\u753b,\u65e7\u76f8\u518cUI", None))
         self.lrdsnowBtn.setText(QCoreApplication.translate("Nugget", u"lrdsnow\n"
-"EU Enabler", None))
-        self.toolButton_15.setText(QCoreApplication.translate("Nugget", u"Additional Thanks", None))
+"\u8bbe\u5907\u4fe1\u606f\u4f2a\u9020", None))
+        self.toolButton_15.setText(QCoreApplication.translate("Nugget", u"\u7279\u522b\u611f\u8c22", None))
         self.libiBtn.setText(QCoreApplication.translate("Nugget", u"pymobiledevice3", None))
         self.qtBtn.setText(QCoreApplication.translate("Nugget", u"Qt Creator", None))
-        self.label.setText(QCoreApplication.translate("Nugget", u"Nugget GUI - Version 4.1", None))
+        self.label.setText(QCoreApplication.translate("Nugget", u"Nugget GUI - Version 4.1 \u6c49\u5316BY Bennett", None))
         self.statusBarLbl.setText(QCoreApplication.translate("Nugget", u"Mobile Gestalt", None))
-        self.mgaWarningLbl.setText(QCoreApplication.translate("Nugget", u"! \u9700\u8981MobileGestalt\u6587\u4ef6. Please select it in the Apply page !", None))
-        self.label_9.setText(QCoreApplication.translate("Nugget", u"\u5b50\u578b\u53f7\u9009\u62e9", None))
+        self.mgaWarningLbl.setText(QCoreApplication.translate("Nugget", u"!\u4e0b\u5217\u4fee\u6539\u9700\u8981MobileGestalt\u6587\u4ef6 \u8bf7\u5728\u5e94\u7528\u9009\u9879\u5361\u9009\u62e9 !", None))
+        self.label_9.setText(QCoreApplication.translate("Nugget", u"\u578b\u53f7\u9009\u62e9", None))
         self.dynamicIslandDrp.setItemText(0, QCoreApplication.translate("Nugget", u"None", None))
-        self.dynamicIslandDrp.setItemText(1, QCoreApplication.translate("Nugget", u"2436 (iPhone X Gestures for SE phones)", None))
-        self.dynamicIslandDrp.setItemText(2, QCoreApplication.translate("Nugget", u"2556 (iPhone 14 Pro Dynamic Island)", None))
-        self.dynamicIslandDrp.setItemText(3, QCoreApplication.translate("Nugget", u"2796 (iPhone 14 Pro Max Dynamic Island)", None))
-        self.dynamicIslandDrp.setItemText(4, QCoreApplication.translate("Nugget", u"2976 (iPhone 15 Pro Max Dynamic Island)", None))
-        self.dynamicIslandDrp.setItemText(5, QCoreApplication.translate("Nugget", u"2622 (iPhone 16 Pro Dynamic Island)", None))
-        self.dynamicIslandDrp.setItemText(6, QCoreApplication.translate("Nugget", u"2868 (iPhone 16 Pro Max Dynamic Island)", None))
+        self.dynamicIslandDrp.setItemText(1, QCoreApplication.translate("Nugget", u"2436 (SE\u7cfb\u5217\u5f00X\u624b\u52bf)", None))
+        self.dynamicIslandDrp.setItemText(2, QCoreApplication.translate("Nugget", u"2556 (iPhone 14 Pro \u7075\u52a8\u5c9b)", None))
+        self.dynamicIslandDrp.setItemText(3, QCoreApplication.translate("Nugget", u"2796 (iPhone 14 Pro Max \u7075\u52a8\u5c9b)", None))
+        self.dynamicIslandDrp.setItemText(4, QCoreApplication.translate("Nugget", u"2976 (iPhone 15 Pro Max \u7075\u52a8\u5c9b)", None))
+        self.dynamicIslandDrp.setItemText(5, QCoreApplication.translate("Nugget", u"2622 (iPhone 16 Pro \u7075\u52a8\u5c9b)", None))
+        self.dynamicIslandDrp.setItemText(6, QCoreApplication.translate("Nugget", u"2868 (iPhone 16 Pro Max \u7075\u52a8\u5c9b)", None))
 
         self.dynamicIslandDrp.setCurrentText(QCoreApplication.translate("Nugget", u"None", None))
-        self.rdarFixChk.setText(QCoreApplication.translate("Nugget", u"\u4fee\u590d RDAR (modifies resolution)", None))
-        self.modelNameChk.setText(QCoreApplication.translate("Nugget", u"\u4fee\u6539\u8bbe\u5907\u578b\u53f7\u540d", None))
+        self.rdarFixChk.setText(QCoreApplication.translate("Nugget", u"\u4fee\u590dRDAR(\u7ea2\u6761)", None))
+        self.modelNameChk.setText(QCoreApplication.translate("Nugget", u"\u4fee\u6539\u8bbe\u5907\u578b\u53f7\u540d\u79f0", None))
+        self.modelNameTxt.setText(QCoreApplication.translate("Nugget", u"\u578b\u53f7\u540d\u79f0", None))
         self.modelNameTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Model Name", None))
-        self.bootChimeChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u5f00\u673a\u97f3", None))
-        self.chargeLimitChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u5145\u7535\u9650\u5236", None))
-        self.tapToWakeChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u53cc\u51fb\u5524\u9192 (for iPhone SEs)", None))
-        self.iphone16SettingsChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 iPhone 16 \u8bbe\u7f6e", None))
-        self.parallaxChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u58c1\u7eb8\u89c6\u89d2\u5dee", None))
-        self.stageManagerChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u53f0\u524d\u8c03\u5ea6 (WARNING: risky on some devices, mainly phones)", None))
-        self.enableMedusaChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Medusa (iPad \u591a\u4efb\u52a1) (WARNING: may be risky on some phones)", None))
-        self.ipadAppsChk.setText(QCoreApplication.translate("Nugget", u"\u5141\u8bb8iPad\u5e94\u7528", None))
-        self.shutterChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u5730\u533a\u9650\u5236", None))
+        self.bootChimeChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u542f\u52a8\u97f3(\u8c8c\u4f3c\u6ca1\u7528)", None))
+        self.chargeLimitChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u52a8\u5145\u7535\u9650\u5236", None))
+        self.tapToWakeChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u53cc\u51fb\u5524\u9192(SE\u7528)", None))
+        self.iphone16SettingsChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528iPhone 16\u8bbe\u7f6e", None))
+        self.parallaxChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u58c1\u7eb8\u89c6\u5dee", None))
+        self.stageManagerChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u53f0\u524d\u8c03\u5ea6 (WARNING: \u5bb9\u6613\u51fa\u95ee\u9898,\u5c24\u5176iPhone\u8bbe\u5907)", None))
+        self.enableMedusaChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Medusa (iPad \u591a\u4efb\u52a1) (WARNING: \u5bb9\u6613\u51fa\u95ee\u9898,\u5c24\u5176iPhone\u8bbe\u5907)", None))
+        self.ipadAppsChk.setText(QCoreApplication.translate("Nugget", u"\u5141\u8bb8iPad\u5e94\u7528\u5728iPhone", None))
+        self.shutterChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u5730\u533a\u9650\u5236\u529f\u80fd (\u5982 \u62cd\u7167\u97f3)", None))
         self.findMyFriendsChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u67e5\u627e\u6211\u7684\u670b\u53cb", None))
-        self.pencilChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Pencil \u8bbe\u7f6e", None))
-        self.actionButtonChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 \u64cd\u4f5c\u6309\u94ae \u8bbe\u7f6e ", None))
-        self.internalInstallChk.setText(QCoreApplication.translate("Nugget", u"Set as Apple Internal Install (ie Metal HUD in any app)", None))
-        self.internalStorageChk.setText(QCoreApplication.translate("Nugget", u"Enable Internal Storage (WARNING: risky for some devices, mainly iPads)", None))
-        self.collisionSOSChk.setText(QCoreApplication.translate("Nugget", u"Enable Collision SOS", None))
-        self.aodChk.setText(QCoreApplication.translate("Nugget", u"Enable Always On Display", None))
-        self.label_10.setText(QCoreApplication.translate("Nugget", u"Custom Gestalt Keys", None))
+        self.pencilChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Pencil \u8bbe\u7f6e(\u8c8c\u4f3c\u6ca1\u7528,\u662f\u7a7a\u58f3\uff09", None))
+        self.actionButtonChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u52a8 Action Button \u8bbe\u7f6e\u83dc\u5355(\u6ca1\u6709\u6309\u952e\u7684\u8bbe\u5907\u5c31\u4e00\u4e2aUI\u6ca1\u7528)", None))
+        self.internalInstallChk.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6eApple Internal \u5b89\u88c5 (\u6240\u6709\u8f6f\u4ef6\u652f\u6301HUD)(\u4e0d\u5efa\u8bae,\u5c0f\u5fc3\u83b7\u5f97\u5e38\u9a7b\u76ae\u80a4)", None))
+        self.internalStorageChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u5185\u7f6e\u50a8\u5b58 (WARNING: \u5bb9\u6613\u51fa\u95ee\u9898,\u5c24\u5176iPad\u8bbe\u5907)", None))
+        self.collisionSOSChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u78b0\u649e SOS", None))
+        self.aodChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u5168\u5929\u5019\u663e\u793a(AOD)", None))
+        self.label_10.setText(QCoreApplication.translate("Nugget", u"\u81ea\u5b9a\u4e49\u5bc6\u94a5", None))
         self.addGestaltKeyBtn.setText(QCoreApplication.translate("Nugget", u"  Add Key", None))
-        self.label_12.setText(QCoreApplication.translate("Nugget", u"Warning: Using this feature incorrectly can lead to bootloops and data loss. Only use if you know\n"
-"what you are doing.", None))
+        self.label_12.setText(QCoreApplication.translate("Nugget", u"\u8b66\u544a\uff1a \u9519\u8bef\u5730\u4f7f\u7528\u6b64\u529f\u80fd\u53ef\u80fd\u4f1a\u767d\u82f9\u679c\u3002\n"
+"\u53ea\u6709\u5728\u60a8\u77e5\u9053\u81ea\u5df1\u5728\u505a\u4ec0\u4e48\u65f6\u624d\u4f7f\u7528\u3002", None))
         self.internalOptionsLbl.setText(QCoreApplication.translate("Nugget", u"\u7279\u6b8a\u529f\u80fd", None))
         self.clockAnimChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u9501\u5c4f\u65f6\u949f\u52a8\u753b", None))
-        self.lockscreenChk.setText(QCoreApplication.translate("Nugget", u"Enable Duplicate Lockscreen Button and Lockscreen Quickswitch", None))
+        self.lockscreenChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u91cd\u590d\u7684\u9501\u5c4f\u6309\u94ae\u548c\u9501\u5c4f\u5feb\u901f\u5f00\u5173(\u8fd9\u5565?)", None))
         self.photosChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u65e7\u76f8\u518cUI", None))
-        self.aiChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Intelligence", None))
-        self.eligibilityLbl.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u4fee\u6539", None))
-        self.euEnablerEnabledChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528EU\u4fee\u6539\u5668", None))
-        self.label_5.setText(QCoreApplication.translate("Nugget", u"\u6a21\u5f0f", None))
+        self.aiChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528Apple Intelligence", None))
+        self.eligibilityLbl.setText(QCoreApplication.translate("Nugget", u"Eligibility Tweaks", None))
+        self.euEnablerEnabledChk.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u4fee\u6539\u5668", None))
+        self.label_5.setText(QCoreApplication.translate("Nugget", u"\u4fee\u6539\u65b9\u5f0f", None))
         self.methodChoiceDrp.setItemText(0, QCoreApplication.translate("Nugget", u"Method 1", None))
         self.methodChoiceDrp.setItemText(1, QCoreApplication.translate("Nugget", u"Method 2", None))
 
-        self.label_6.setText(QCoreApplication.translate("Nugget", u"\u5730\u533aCode", None))
+        self.label_6.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u7b26\u53f7(\u4f8b:US)", None))
         self.regionCodeTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Region Code (Default: US)", None))
-        self.mgaWarningLbl2.setText(QCoreApplication.translate("Nugget", u"! \u9700\u8981MobileGestalt\u6587\u4ef6. Please select it in the Apply page !", None))
-        self.enableAIChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Intelligence (\u5bf9\u4e8e \u4e0d\u652f\u6301\u8bbe\u5907)", None))
-        self.eligFileChk.setText(QCoreApplication.translate("Nugget", u"Enable Eligibility File", None))
-        self.languageLbl.setText(QCoreApplication.translate("Nugget", u"Language Code (not needed for English)", None))
+        self.mgaWarningLbl2.setText(QCoreApplication.translate("Nugget", u"!\u4e0b\u5217\u4fee\u6539\u9700\u8981MobileGestalt\u6587\u4ef6 \u8bf7\u5728\u5e94\u7528\u9009\u9879\u5361\u9009\u62e9 !", None))
+        self.enableAIChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528Apple Intelligence (\u5bf9\u4e8e\u4e0d\u652f\u6301\u7684\u8bbe\u5907)", None))
+        self.eligFileChk.setText(QCoreApplication.translate("Nugget", u"\u4f2a\u9020\u5730\u533a\u4fe1\u606f", None))
+        self.languageLbl.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u7b26\u53f7:", None))
         self.languageTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Language Code (i.e. en)", None))
-        self.aiInfoLabel.setText(QCoreApplication.translate("Nugget", u"In order to download the AI models, you must spoof your device model. However, this may break \n"
-"Face ID until you revert back. \n"
-"\n"
-"WARNING: Do not go to the Apple Intelligence menu in the Settings app after unspoofing.\n"
-"\n"
-"Entering the menu on your original device model will cause a re-download and may require a full\n"
-"restore to fix. Furthermore, if you switch between model groups, like spoofing from the iPhone 16s\n"
-"to the iPhone 15 Pro series, a re-download may also occur. \n"
-"Please be careful!", None))
-        self.label_8.setText(QCoreApplication.translate("Nugget", u"\u4fee\u6539\u578b\u53f7", None))
+        self.aiInfoLabel.setText(QCoreApplication.translate("Nugget", u"\u4e3a\u4e86\u4e0b\u8f7d AI \u6a21\u578b\uff0c\u60a8\u5fc5\u987b\u4f2a\u9020\u60a8\u7684\u8bbe\u5907\u6a21\u578b\u3002\u4f46\u662f\uff0c\u8fd9\u53ef\u80fd\u4f1a\u7834\u574f Face ID\uff0c\u76f4\u5230\u60a8\u6062\u590d\u4fee\u6539\u3002\n"
+"\u8b66\u544a\uff1a\u53d6\u6d88\u4f2a\u9020\u540e\uff0c\u8bf7\u52ff\u8f6c\u5230\u201c\u8bbe\u7f6e\u201d\u5e94\u7528\u4e2d\u7684 Apple Intelligence \u83dc\u5355\u3002\n"
+"\u5728\u539f\u59cb\u8bbe\u5907\u578b\u53f7\u4e0a\u8fdb\u5165\u8be5\u83dc\u5355\u5c06\u5bfc\u81f4\u91cd\u65b0\u4e0b\u8f7d\uff0c\u5e76\u53ef\u80fd\u9700\u8981\u5b8c\u5168\u6062\u590d\u624d\u80fd\u4fee\u590d\u3002\n"
+"\u6b64\u5916\uff0c\u5982\u679c\u60a8\u5728\u578b\u53f7\u4e4b\u95f4\u5207\u6362\uff0c\u4f8b\u5982\u4ece iPhone 16\u5230 iPhone 15 Pro \u7cfb\u5217\u7684\u4f2a\u9020\uff0c\u4e5f\u53ef\u80fd\u4f1a\u91cd\u65b0\u4e0b\u8f7d\u3002\n"
+"\u8bf7\u5c0f\u5fc3\uff01", None))
+        self.label_8.setText(QCoreApplication.translate("Nugget", u"\u4f2a\u9020\u673a\u578b", None))
         self.spoofedModelDrp.setItemText(0, QCoreApplication.translate("Nugget", u"Original", None))
         self.spoofedModelDrp.setItemText(1, QCoreApplication.translate("Nugget", u"iPhone 15 Pro (iPhone16,1)", None))
         self.spoofedModelDrp.setItemText(2, QCoreApplication.translate("Nugget", u"iPhone 15 Pro Max (iPhone16,2)", None))
@@ -3067,13 +3053,13 @@ class Ui_Nugget(object):
         self.disableCrumbChk.setText(QCoreApplication.translate("Nugget", u"Disable Breadcrumbs", None))
         self.enableSupervisionTextChk.setText(QCoreApplication.translate("Nugget", u"Show Supervision Text on Lock Screen", None))
         self.enableAirPlayChk.setText(QCoreApplication.translate("Nugget", u"Enable AirPlay support for Stage Manager", None))
-        self.internalOptionsLbl1.setText(QCoreApplication.translate("Nugget", u"\u5185\u90e8\u8bbe\u7f6e", None))
-        self.buildVersionChk.setText(QCoreApplication.translate("Nugget", u"\u63a7\u5236\u4e2d\u5fc3\u663e\u793a\u7248\u672c\u53f7", None))
-        self.RTLChk.setText(QCoreApplication.translate("Nugget", u"\u5f3a\u5236\u53f3\u5411\u5de6\u663e\u793a", None))
-        self.metalHUDChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Metal HUD \u8c03\u8bd5", None))
-        self.iMessageChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 iMessage \u8c03\u8bd5", None))
-        self.IDSChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Continuity \u8c03\u8bd5", None))
-        self.VCChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 FaceTime \u8c03\u8bd5", None))
+        self.internalOptionsLbl1.setText(QCoreApplication.translate("Nugget", u"Internal Options", None))
+        self.buildVersionChk.setText(QCoreApplication.translate("Nugget", u"Show Build Version in Status Bar", None))
+        self.RTLChk.setText(QCoreApplication.translate("Nugget", u"Force Right-to-Left Layout", None))
+        self.metalHUDChk.setText(QCoreApplication.translate("Nugget", u"Enable Metal HUD Debug", None))
+        self.iMessageChk.setText(QCoreApplication.translate("Nugget", u"Enable iMessage Debugging", None))
+        self.IDSChk.setText(QCoreApplication.translate("Nugget", u"Enable Continuity Debugging", None))
+        self.VCChk.setText(QCoreApplication.translate("Nugget", u"Enable FaceTime Debugging", None))
         self.appStoreChk.setText(QCoreApplication.translate("Nugget", u"Enable App Store Debug Gesture", None))
         self.notesChk.setText(QCoreApplication.translate("Nugget", u"Enable Notes Debug Mode", None))
         self.showTouchesChk.setText(QCoreApplication.translate("Nugget", u"Show Touches With Debug Info", None))
@@ -3081,39 +3067,45 @@ class Ui_Nugget(object):
         self.enableWakeVibrateChk.setText(QCoreApplication.translate("Nugget", u"Vibrate on Raise-to-Wake", None))
         self.pasteSoundChk.setText(QCoreApplication.translate("Nugget", u"Play Sound on Paste", None))
         self.notifyPastesChk.setText(QCoreApplication.translate("Nugget", u"Show Notifications for System Pastes", None))
-        self.advancedOptionsLbl.setText(QCoreApplication.translate("Nugget", u"Risky Options", None))
-        self.label_17.setText(QCoreApplication.translate("Nugget", u"Disclaimer:\n"
+        self.advancedOptionsLbl.setText(QCoreApplication.translate("Nugget", u"\u9ad8\u98ce\u9669\u529f\u80fd", None))
+        self.label_17.setText(QCoreApplication.translate("Nugget", u"\u544a\u77e5:\n"
 "\n"
-"The options on this page may be unsafe for your device. Use these options at your own risk. Changing\n"
-"your device resolution has the potential to brick your device when used improperly.\n"
-"\n"
-"Nugget is not responsible if you mess up your device, especially with resolution changer.", None))
+"\u8fd9\u91cc\u7684\u9009\u9879\u53ef\u80fd\u4f1a\u5bfc\u81f4\u4e0b\u5217\u95ee\u9898(\u5305\u62ec\u4f46\u4e0d\u9650\u4e8e):\n"
+"1.\u767d\u82f9\u679c\n"
+"2.\u624b\u673a\u53d1\u70eb\n"
+"3.SpringBoard\u5d29\u6e83\n"
+"4.\u559c\u63d0\u677f\u7816\n"
+"5.\u7b2c\u4e09\u6b21\u4e16\u754c\u5927\u6218\u7b49\n"
+"Nugget\u4e0d\u5bf9\u4e0b\u5217\u95ee\u9898\u5bfc\u81f4\u7684\u635f\u5931\u8d1f\u8d23", None))
         self.disableOTAChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u7cfb\u7edfOTA", None))
-        self.enableResolutionChk.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6e\u81ea\u5b9a\u4e49\u5206\u8fa8\u7387", None))
-        self.resHeightLbl.setText(QCoreApplication.translate("Nugget", u"Height:", None))
+        self.enableResolutionChk.setText(QCoreApplication.translate("Nugget", u"\u81ea\u5b9a\u4e49\u5206\u8fa8\u7387", None))
+        self.resHeightLbl.setText(QCoreApplication.translate("Nugget", u"\u9ad8:", None))
+        self.resHeightTxt.setText(QCoreApplication.translate("Nugget", u"\u5206\u8fa8\u7387:", None))
         self.resHeightTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Resolution Height", None))
         self.resHeightWarningLbl.setText(QCoreApplication.translate("Nugget", u"!", None))
-        self.resWidthLbl.setText(QCoreApplication.translate("Nugget", u"Width:", None))
+        self.resWidthLbl.setText(QCoreApplication.translate("Nugget", u"\u5bbd:", None))
+        self.resWidthTxt.setText(QCoreApplication.translate("Nugget", u"\u5206\u8fa8\u7387:", None))
         self.resWidthTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Resolution Width", None))
         self.resWidthWarningLbl.setText(QCoreApplication.translate("Nugget", u"!", None))
         self.statusBarLbl_5.setText(QCoreApplication.translate("Nugget", u"Apply", None))
         self.label_16.setText("")
-        self.modifiedTweaksLbl.setText(QCoreApplication.translate("Nugget", u"\u5f53\u524d\u6587\u4ef6", None))
+        self.modifiedTweaksLbl.setText(QCoreApplication.translate("Nugget", u"\u5df2\u9009\u62e9\u7684\u4fee\u6539", None))
         self.gestaltLocationLbl.setText(QCoreApplication.translate("Nugget", u"None", None))
         self.chooseGestaltBtn.setText(QCoreApplication.translate("Nugget", u"\u9009\u62e9\u6587\u4ef6", None))
         self.applyTweaksBtn.setText(QCoreApplication.translate("Nugget", u"\u5e94\u7528\u4fee\u6539", None))
-        self.statusLbl.setText(QCoreApplication.translate("Nugget", u"Ready!", None))
-        self.removeTweaksBtn.setText(QCoreApplication.translate("Nugget", u"\u79fb\u9664\u6240\u6709\u8bbe\u5b9a", None))
-        self.resetGestaltBtn.setText(QCoreApplication.translate("Nugget", u"\u91cd\u7f6e", None))
+        self.statusLbl.setText(QCoreApplication.translate("Nugget", u"\u51c6\u5907\u597d\u4e86\uff0c\u7b49\u5f85\u8d70\u8d77", None))
+        self.removeTweaksBtn.setText(QCoreApplication.translate("Nugget", u"\u79fb\u9664\u6240\u6709\u4fee\u6539", None))
+        self.resetGestaltBtn.setText(QCoreApplication.translate("Nugget", u"\u91cd\u7f6e Mobile Gestalt", None))
         self.springboardOptionsLbl1.setText(QCoreApplication.translate("Nugget", u"Nugget Settings", None))
-        self.allowWifiApplyingChk.setText(QCoreApplication.translate("Nugget", u"\u5141\u8bb8WIFI\u5e94\u7528", None))
+        self.allowWifiApplyingChk.setText(QCoreApplication.translate("Nugget", u"\u5141\u8bb8\u901a\u8fc7WIFI\u8bbe\u7f6e", None))
         self.autoRebootChk.setText(QCoreApplication.translate("Nugget", u"\u5e94\u7528\u540e\u81ea\u52a8\u91cd\u542f", None))
-        self.showRiskyChk.setText(QCoreApplication.translate("Nugget", u"\u5c55\u793a Risky Tweak Options", None))
-        self.skipSetupChk.setText(QCoreApplication.translate("Nugget", u"\u8df3\u8fc7\u6fc0\u6d3b * (non-exploit files only)", None))
-        self.supervisionChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 \u76d1\u7ba1 * (requires Skip Setup)", None))
+        self.showRiskyChk.setText(QCoreApplication.translate("Nugget", u"\u5c55\u793a\u9ad8\u98ce\u9669\u529f\u80fd", None))
+        self.skipSetupChk.setText(QCoreApplication.translate("Nugget", u"\u8df3\u8fc7\u6fc0\u6d3b\u8bbe\u7f6e", None))
+        self.supervisionChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u76d1\u7ba1(\u9700\u8981\u6fc0\u6d3b)", None))
+        self.supervisionOrganization.setText(QCoreApplication.translate("Nugget", u"\u7ec4\u7ec7\u540d\u79f0", None))
         self.supervisionOrganization.setPlaceholderText(QCoreApplication.translate("Nugget", u"Enter Organization Name", None))
         self.label_15.setText(QCoreApplication.translate("Nugget", u"* Note: Skip Setup may cause issues with configuration profiles. Turn it off if you need that.", None))
-        self.resetPairBtn.setText(QCoreApplication.translate("Nugget", u"Reset Device Pairing", None))
+        self.resetPairBtn.setText(QCoreApplication.translate("Nugget", u"\u91cd\u65b0\u914d\u5bf9\u8bbe\u5907", None))
         self.statusBarLbl_2.setText(QCoreApplication.translate("Nugget", u"Location Simulation", None))
         self.label_4.setText("")
         self.loadLocSimBtn.setText(QCoreApplication.translate("Nugget", u"Start Location Simulation", None))

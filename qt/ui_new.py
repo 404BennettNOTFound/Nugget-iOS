@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainwindow.ui'
+## Form generated from reading UI file 'new.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -2910,7 +2910,7 @@ class Ui_Nugget(object):
         self.retranslateUi(Nugget)
 
         self.devicePicker.setCurrentIndex(-1)
-        self.pages.setCurrentIndex(12)
+        self.pages.setCurrentIndex(0)
         self.dynamicIslandDrp.setCurrentIndex(0)
         self.spoofedModelDrp.setCurrentIndex(0)
 
@@ -2924,25 +2924,25 @@ class Ui_Nugget(object):
         self.devicePicker.setPlaceholderText(QCoreApplication.translate("Nugget", u"None", None))
         self.refreshBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"btn", None))
         self.titleBar.setText(QCoreApplication.translate("Nugget", u"Nugget", None))
-        self.homePageBtn.setText(QCoreApplication.translate("Nugget", u"    Home", None))
+        self.homePageBtn.setText(QCoreApplication.translate("Nugget", u"\u4e3b\u9875", None))
         self.homePageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.explorePageBtn.setText(QCoreApplication.translate("Nugget", u"    Explore", None))
+        self.explorePageBtn.setText(QCoreApplication.translate("Nugget", u"\u63a2\u7d22", None))
         self.explorePageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
         self.gestaltPageBtn.setText(QCoreApplication.translate("Nugget", u"     Mobile Gestalt", None))
         self.gestaltPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.featureFlagsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Feature Flags", None))
+        self.featureFlagsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u7279\u6b8a\u529f\u80fd", None))
         self.featureFlagsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.euEnablerPageBtn.setText(QCoreApplication.translate("Nugget", u"    Eligibility", None))
+        self.euEnablerPageBtn.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u4fee\u6539", None))
         self.euEnablerPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.springboardOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Springboard Options", None))
+        self.springboardOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Springboard \u8bbe\u7f6e", None))
         self.springboardOptionsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.internalOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Internal Options", None))
+        self.internalOptionsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u5185\u90e8\u8bbe\u7f6e", None))
         self.internalOptionsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.advancedPageBtn.setText(QCoreApplication.translate("Nugget", u"    Risky Options", None))
+        self.advancedPageBtn.setText(QCoreApplication.translate("Nugget", u"\u9ad8\u98ce\u9669\u529f\u80fd", None))
         self.advancedPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.applyPageBtn.setText(QCoreApplication.translate("Nugget", u"    Apply", None))
+        self.applyPageBtn.setText(QCoreApplication.translate("Nugget", u"\u5e94\u7528", None))
         self.applyPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
-        self.settingsPageBtn.setText(QCoreApplication.translate("Nugget", u"    Settings", None))
+        self.settingsPageBtn.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6e", None))
         self.settingsPageBtn.setProperty(u"cls", QCoreApplication.translate("Nugget", u"sidebarBtn", None))
         self.phoneNameLbl.setText(QCoreApplication.translate("Nugget", u"Phone", None))
         self.phoneVersionLbl.setText(QCoreApplication.translate("Nugget", u"<a style=\"text-decoration:none; color: white\" href=\"#\">Version</a>", None))
@@ -2954,15 +2954,15 @@ class Ui_Nugget(object):
         self.leminTwitterBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
         self.leminGithubBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
         self.leminKoFiBtn.setText(QCoreApplication.translate("Nugget", u"...", None))
-        self.toolButton_14.setText(QCoreApplication.translate("Nugget", u"Main Developer", None))
-        self.helpFromBtn.setText(QCoreApplication.translate("Nugget", u"With Help From", None))
+        self.toolButton_14.setText(QCoreApplication.translate("Nugget", u"\u4e3b\u5f00\u53d1\u8005", None))
+        self.helpFromBtn.setText(QCoreApplication.translate("Nugget", u"\u529f\u80fd\u5b9e\u73b0", None))
         self.jjtechBtn.setText(QCoreApplication.translate("Nugget", u"JJTech\n"
 "Sparserestore", None))
         self.disfordottieBtn.setText(QCoreApplication.translate("Nugget", u"disfordottie\n"
 "Clock Anim, Photos UI", None))
         self.lrdsnowBtn.setText(QCoreApplication.translate("Nugget", u"lrdsnow\n"
 "EU Enabler", None))
-        self.toolButton_15.setText(QCoreApplication.translate("Nugget", u"Additional Thanks", None))
+        self.toolButton_15.setText(QCoreApplication.translate("Nugget", u"\u7279\u522b\u611f\u8c22", None))
         self.libiBtn.setText(QCoreApplication.translate("Nugget", u"pymobiledevice3", None))
         self.qtBtn.setText(QCoreApplication.translate("Nugget", u"Qt Creator", None))
         self.label.setText(QCoreApplication.translate("Nugget", u"Nugget GUI - Version 4.1", None))

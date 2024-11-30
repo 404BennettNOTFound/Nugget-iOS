@@ -27,7 +27,7 @@ def show_error_msg(txt: str, detailed_txt: str = None):
 
 def show_apply_error(e: Exception, update_label=lambda x: None):
     if "Find My" in str(e):
-        show_error_msg("Find My must be disabled in order to use this tool.",
+        show_error_msg("使用本工具需要关闭查找我的设备",
                        detailed_txt="Disable Find My from Settings (Settings -> [Your Name] -> Find My) and then try again.")
     elif "Encrypted Backup MDM" in str(e):
         show_error_msg("Nugget cannot be used on this device. Click Show Details for more info.",

@@ -5,7 +5,7 @@ import plistlib
 
 from pymobiledevice3.lockdown import create_using_usbmux
 
-from qt.ui_mainwindow import Ui_Nugget
+from qt.ui_new import Ui_Nugget
 
 from devicemanagement.constants import Version
 from devicemanagement.device_manager import DeviceManager
