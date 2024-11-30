@@ -787,7 +787,7 @@ QSlider::tick:horizontal {
           <item>
            <widget class="QStackedWidget" name="pages">
             <property name="currentIndex">
-             <number>0</number>
+             <number>12</number>
             </property>
             <widget class="QWidget" name="homePage">
              <property name="font">
@@ -1744,7 +1744,7 @@ QToolButton:pressed {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
+                   <y>-294</y>
                    <width>650</width>
                    <height>1200</height>
                   </rect>
@@ -2031,14 +2031,14 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QCheckBox" name="internalInstallChk">
                        <property name="text">
-                        <string>Set as Apple Internal Install (ie Metal HUD in any app)</string>
+                        <string>设置为 Apple Internal Install (ie Metal HUD in any app)</string>
                        </property>
                       </widget>
                      </item>
                      <item>
                       <widget class="QCheckBox" name="internalStorageChk">
                        <property name="text">
-                        <string>Enable Internal Storage (WARNING: risky for some devices, mainly iPads)</string>
+                        <string>启用 内置储存 (WARNING: risky for some devices, mainly iPads)</string>
                        </property>
                       </widget>
                      </item>
@@ -2060,14 +2060,14 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QCheckBox" name="collisionSOSChk">
                        <property name="text">
-                        <string>Enable Collision SOS</string>
+                        <string>启用碰撞SOS</string>
                        </property>
                       </widget>
                      </item>
                      <item>
                       <widget class="QCheckBox" name="aodChk">
                        <property name="text">
-                        <string>Enable Always On Display</string>
+                        <string>启用 Always On Display</string>
                        </property>
                       </widget>
                      </item>
@@ -2341,7 +2341,7 @@ what you are doing.</string>
                  <item>
                   <widget class="QCheckBox" name="lockscreenChk">
                    <property name="text">
-                    <string>Enable Duplicate Lockscreen Button and Lockscreen Quickswitch</string>
+                    <string>启用重复的锁屏按钮和锁屏快速开关</string>
                    </property>
                   </widget>
                  </item>
@@ -2673,7 +2673,7 @@ QComboBox QAbstractItemView::item:hover {
                     </font>
                    </property>
                    <property name="text">
-                    <string>! 需要MobileGestalt文件. Please select it in the Apply page !</string>
+                    <string>! 需要MobileGestalt文件. 请在应用菜单选择 !</string>
                    </property>
                   </widget>
                  </item>
@@ -2702,14 +2702,14 @@ QComboBox QAbstractItemView::item:hover {
                     <item>
                      <widget class="QCheckBox" name="eligFileChk">
                       <property name="text">
-                       <string>Enable Eligibility File</string>
+                       <string>启用AI资格</string>
                       </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QLabel" name="languageLbl">
                       <property name="text">
-                       <string>Language Code (not needed for English)</string>
+                       <string>地区 Code (not needed for English)</string>
                       </property>
                      </widget>
                     </item>
@@ -2750,15 +2750,12 @@ QComboBox QAbstractItemView::item:hover {
                        </size>
                       </property>
                       <property name="text">
-                       <string>In order to download the AI models, you must spoof your device model. However, this may break 
-Face ID until you revert back. 
-
-WARNING: Do not go to the Apple Intelligence menu in the Settings app after unspoofing.
-
-Entering the menu on your original device model will cause a re-download and may require a full
-restore to fix. Furthermore, if you switch between model groups, like spoofing from the iPhone 16s
-to the iPhone 15 Pro series, a re-download may also occur. 
-Please be careful!</string>
+                       <string>为了下载 AI 模型，您必须伪装设备型号。但是，这可能会导致Face ID不可用，直到您恢复伪装。
+警告： 取消伪装后，请勿转到“设置”应用程序中的 Apple Intelligence 菜单。
+进入原始设备型号上的菜单将导致重新下载，并且可能需要完整的
+restore 进行修复。此外，如果您在型号之间切换，例如 iPhone 16 的伪装
+到 iPhone 15 Pro 系列，也会重新下载。
+请小心！</string>
                       </property>
                       <property name="textFormat">
                        <enum>Qt::AutoText</enum>
@@ -3704,12 +3701,16 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QLabel" name="label_17">
                    <property name="text">
-                    <string>Disclaimer:
+                    <string>警告:
 
-The options on this page may be unsafe for your device. Use these options at your own risk. Changing
-your device resolution has the potential to brick your device when used improperly.
+这些选项有很大的风险 包括但不限于 
+1.白苹果
+2.板砖
+3.发热
+4.第三次世界大战
+出了问题 Nugget不负责 尤其改分辨率的小朋友们
 
-Nugget is not responsible if you mess up your device, especially with resolution changer.</string>
+</string>
                    </property>
                   </widget>
                  </item>
@@ -4899,7 +4900,7 @@ Nugget is not responsible if you mess up your device, especially with resolution
                        </font>
                       </property>
                       <property name="text">
-                       <string>Custom Operations</string>
+                       <string>自定义选项</string>
                       </property>
                      </widget>
                     </item>

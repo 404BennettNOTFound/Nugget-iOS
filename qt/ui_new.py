@@ -952,7 +952,7 @@ class Ui_Nugget(object):
         self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 650, 1200))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, -294, 650, 1200))
         self.scrollAreaWidgetContents.setMinimumSize(QSize(650, 1200))
         self.scrollAreaWidgetContents.setMaximumSize(QSize(650, 1200))
         self.verticalLayout_9 = QVBoxLayout(self.scrollAreaWidgetContents)
@@ -2910,7 +2910,7 @@ class Ui_Nugget(object):
         self.retranslateUi(Nugget)
 
         self.devicePicker.setCurrentIndex(-1)
-        self.pages.setCurrentIndex(0)
+        self.pages.setCurrentIndex(12)
         self.dynamicIslandDrp.setCurrentIndex(0)
         self.spoofedModelDrp.setCurrentIndex(0)
 
@@ -2993,17 +2993,17 @@ class Ui_Nugget(object):
         self.findMyFriendsChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u67e5\u627e\u6211\u7684\u670b\u53cb", None))
         self.pencilChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Pencil \u8bbe\u7f6e", None))
         self.actionButtonChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 \u64cd\u4f5c\u6309\u94ae \u8bbe\u7f6e ", None))
-        self.internalInstallChk.setText(QCoreApplication.translate("Nugget", u"Set as Apple Internal Install (ie Metal HUD in any app)", None))
-        self.internalStorageChk.setText(QCoreApplication.translate("Nugget", u"Enable Internal Storage (WARNING: risky for some devices, mainly iPads)", None))
-        self.collisionSOSChk.setText(QCoreApplication.translate("Nugget", u"Enable Collision SOS", None))
-        self.aodChk.setText(QCoreApplication.translate("Nugget", u"Enable Always On Display", None))
+        self.internalInstallChk.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6e\u4e3a Apple Internal Install (ie Metal HUD in any app)", None))
+        self.internalStorageChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 \u5185\u7f6e\u50a8\u5b58 (WARNING: risky for some devices, mainly iPads)", None))
+        self.collisionSOSChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u78b0\u649eSOS", None))
+        self.aodChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Always On Display", None))
         self.label_10.setText(QCoreApplication.translate("Nugget", u"Custom Gestalt Keys", None))
         self.addGestaltKeyBtn.setText(QCoreApplication.translate("Nugget", u"  Add Key", None))
         self.label_12.setText(QCoreApplication.translate("Nugget", u"Warning: Using this feature incorrectly can lead to bootloops and data loss. Only use if you know\n"
 "what you are doing.", None))
         self.internalOptionsLbl.setText(QCoreApplication.translate("Nugget", u"\u7279\u6b8a\u529f\u80fd", None))
         self.clockAnimChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u9501\u5c4f\u65f6\u949f\u52a8\u753b", None))
-        self.lockscreenChk.setText(QCoreApplication.translate("Nugget", u"Enable Duplicate Lockscreen Button and Lockscreen Quickswitch", None))
+        self.lockscreenChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u91cd\u590d\u7684\u9501\u5c4f\u6309\u94ae\u548c\u9501\u5c4f\u5feb\u901f\u5f00\u5173", None))
         self.photosChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528\u65e7\u76f8\u518cUI", None))
         self.aiChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Intelligence", None))
         self.eligibilityLbl.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a\u4fee\u6539", None))
@@ -3014,20 +3014,17 @@ class Ui_Nugget(object):
 
         self.label_6.setText(QCoreApplication.translate("Nugget", u"\u5730\u533aCode", None))
         self.regionCodeTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Region Code (Default: US)", None))
-        self.mgaWarningLbl2.setText(QCoreApplication.translate("Nugget", u"! \u9700\u8981MobileGestalt\u6587\u4ef6. Please select it in the Apply page !", None))
+        self.mgaWarningLbl2.setText(QCoreApplication.translate("Nugget", u"! \u9700\u8981MobileGestalt\u6587\u4ef6. \u8bf7\u5728\u5e94\u7528\u83dc\u5355\u9009\u62e9 !", None))
         self.enableAIChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528 Apple Intelligence (\u5bf9\u4e8e \u4e0d\u652f\u6301\u8bbe\u5907)", None))
-        self.eligFileChk.setText(QCoreApplication.translate("Nugget", u"Enable Eligibility File", None))
-        self.languageLbl.setText(QCoreApplication.translate("Nugget", u"Language Code (not needed for English)", None))
+        self.eligFileChk.setText(QCoreApplication.translate("Nugget", u"\u542f\u7528AI\u8d44\u683c", None))
+        self.languageLbl.setText(QCoreApplication.translate("Nugget", u"\u5730\u533a Code (not needed for English)", None))
         self.languageTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"Language Code (i.e. en)", None))
-        self.aiInfoLabel.setText(QCoreApplication.translate("Nugget", u"In order to download the AI models, you must spoof your device model. However, this may break \n"
-"Face ID until you revert back. \n"
-"\n"
-"WARNING: Do not go to the Apple Intelligence menu in the Settings app after unspoofing.\n"
-"\n"
-"Entering the menu on your original device model will cause a re-download and may require a full\n"
-"restore to fix. Furthermore, if you switch between model groups, like spoofing from the iPhone 16s\n"
-"to the iPhone 15 Pro series, a re-download may also occur. \n"
-"Please be careful!", None))
+        self.aiInfoLabel.setText(QCoreApplication.translate("Nugget", u"\u4e3a\u4e86\u4e0b\u8f7d AI \u6a21\u578b\uff0c\u60a8\u5fc5\u987b\u4f2a\u88c5\u8bbe\u5907\u578b\u53f7\u3002\u4f46\u662f\uff0c\u8fd9\u53ef\u80fd\u4f1a\u5bfc\u81f4Face ID\u4e0d\u53ef\u7528\uff0c\u76f4\u5230\u60a8\u6062\u590d\u4f2a\u88c5\u3002\n"
+"\u8b66\u544a\uff1a \u53d6\u6d88\u4f2a\u88c5\u540e\uff0c\u8bf7\u52ff\u8f6c\u5230\u201c\u8bbe\u7f6e\u201d\u5e94\u7528\u7a0b\u5e8f\u4e2d\u7684 Apple Intelligence \u83dc\u5355\u3002\n"
+"\u8fdb\u5165\u539f\u59cb\u8bbe\u5907\u578b\u53f7\u4e0a\u7684\u83dc\u5355\u5c06\u5bfc\u81f4\u91cd\u65b0\u4e0b\u8f7d\uff0c\u5e76\u4e14\u53ef\u80fd\u9700\u8981\u5b8c\u6574\u7684\n"
+"restore \u8fdb\u884c\u4fee\u590d\u3002\u6b64\u5916\uff0c\u5982\u679c\u60a8\u5728\u578b\u53f7\u4e4b\u95f4\u5207\u6362\uff0c\u4f8b\u5982 iPhone 16 \u7684\u4f2a\u88c5\n"
+"\u5230 iPhone 15 Pro \u7cfb\u5217\uff0c\u4e5f\u4f1a\u91cd\u65b0\u4e0b\u8f7d\u3002\n"
+"\u8bf7\u5c0f\u5fc3\uff01", None))
         self.label_8.setText(QCoreApplication.translate("Nugget", u"\u4fee\u6539\u578b\u53f7", None))
         self.spoofedModelDrp.setItemText(0, QCoreApplication.translate("Nugget", u"Original", None))
         self.spoofedModelDrp.setItemText(1, QCoreApplication.translate("Nugget", u"iPhone 15 Pro (iPhone16,1)", None))
@@ -3082,12 +3079,16 @@ class Ui_Nugget(object):
         self.pasteSoundChk.setText(QCoreApplication.translate("Nugget", u"Play Sound on Paste", None))
         self.notifyPastesChk.setText(QCoreApplication.translate("Nugget", u"Show Notifications for System Pastes", None))
         self.advancedOptionsLbl.setText(QCoreApplication.translate("Nugget", u"Risky Options", None))
-        self.label_17.setText(QCoreApplication.translate("Nugget", u"Disclaimer:\n"
+        self.label_17.setText(QCoreApplication.translate("Nugget", u"\u8b66\u544a:\n"
 "\n"
-"The options on this page may be unsafe for your device. Use these options at your own risk. Changing\n"
-"your device resolution has the potential to brick your device when used improperly.\n"
+"\u8fd9\u4e9b\u9009\u9879\u6709\u5f88\u5927\u7684\u98ce\u9669 \u5305\u62ec\u4f46\u4e0d\u9650\u4e8e \n"
+"1.\u767d\u82f9\u679c\n"
+"2.\u677f\u7816\n"
+"3.\u53d1\u70ed\n"
+"4.\u7b2c\u4e09\u6b21\u4e16\u754c\u5927\u6218\n"
+"\u51fa\u4e86\u95ee\u9898 Nugget\u4e0d\u8d1f\u8d23 \u5c24\u5176\u6539\u5206\u8fa8\u7387\u7684\u5c0f\u670b\u53cb\u4eec\n"
 "\n"
-"Nugget is not responsible if you mess up your device, especially with resolution changer.", None))
+"", None))
         self.disableOTAChk.setText(QCoreApplication.translate("Nugget", u"\u7981\u7528\u7cfb\u7edfOTA", None))
         self.enableResolutionChk.setText(QCoreApplication.translate("Nugget", u"\u8bbe\u7f6e\u81ea\u5b9a\u4e49\u5206\u8fa8\u7387", None))
         self.resHeightLbl.setText(QCoreApplication.translate("Nugget", u"Height:", None))
@@ -3123,7 +3124,7 @@ class Ui_Nugget(object):
         self.longitudeTxt.setPlaceholderText(QCoreApplication.translate("Nugget", u"XXX.XXXXX", None))
         self.setLocationBtn.setText(QCoreApplication.translate("Nugget", u"Set Location", None))
         self.resetLocationBtn.setText(QCoreApplication.translate("Nugget", u"Reset Location", None))
-        self.customOperationsLbl.setText(QCoreApplication.translate("Nugget", u"Custom Operations", None))
+        self.customOperationsLbl.setText(QCoreApplication.translate("Nugget", u"\u81ea\u5b9a\u4e49\u9009\u9879", None))
         self.label_14.setText("")
         self.importOperationBtn.setText(QCoreApplication.translate("Nugget", u"  Import .cowperation", None))
         self.newOperationBtn.setText(QCoreApplication.translate("Nugget", u"  New Operation", None))
