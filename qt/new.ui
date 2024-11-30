@@ -412,7 +412,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>主页</string>
+             <string>     主页</string>
             </property>
             <property name="icon">
              <iconset>
@@ -447,7 +447,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>探索</string>
+             <string>     探索</string>
             </property>
             <property name="icon">
              <iconset>
@@ -564,7 +564,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>地区修改</string>
+             <string>    地区修改</string>
             </property>
             <property name="icon">
              <iconset>
@@ -622,7 +622,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>内部设置</string>
+             <string>    内部设置</string>
             </property>
             <property name="icon">
              <iconset>
@@ -695,7 +695,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>应用</string>
+             <string>    应用</string>
             </property>
             <property name="icon">
              <iconset>
@@ -724,7 +724,7 @@ QSlider::tick:horizontal {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>设置</string>
+             <string>    设置</string>
             </property>
             <property name="icon">
              <iconset>
@@ -787,7 +787,7 @@ QSlider::tick:horizontal {
           <item>
            <widget class="QStackedWidget" name="pages">
             <property name="currentIndex">
-             <number>12</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="homePage">
              <property name="font">
@@ -1744,7 +1744,7 @@ QToolButton:pressed {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-294</y>
+                   <y>-136</y>
                    <width>650</width>
                    <height>1200</height>
                   </rect>
@@ -1967,14 +1967,14 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QCheckBox" name="stageManagerChk">
                        <property name="text">
-                        <string>启用台前调度 (WARNING: risky on some devices, mainly phones)</string>
+                        <string>启用台前调度 (WARNING: 部分设备存在风险, 尤其iPhone)</string>
                        </property>
                       </widget>
                      </item>
                      <item>
                       <widget class="QCheckBox" name="enableMedusaChk">
                        <property name="text">
-                        <string>启用 Medusa (iPad 多任务) (WARNING: may be risky on some phones)</string>
+                        <string>启用 Medusa (iPad 多任务) (WARNING: 部分设备存在风险，尤其iPad)</string>
                        </property>
                       </widget>
                      </item>
@@ -2038,7 +2038,7 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QCheckBox" name="internalStorageChk">
                        <property name="text">
-                        <string>启用 内置储存 (WARNING: risky for some devices, mainly iPads)</string>
+                        <string>启用 内置储存 (WARNING: 部分设备存在风险，尤其iPad)</string>
                        </property>
                       </widget>
                      </item>
@@ -2067,7 +2067,7 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QCheckBox" name="aodChk">
                        <property name="text">
-                        <string>启用 Always On Display</string>
+                        <string>启用 Always On Display(全天候显示屏)</string>
                        </property>
                       </widget>
                      </item>
@@ -2097,7 +2097,7 @@ QComboBox QAbstractItemView::item:hover {
                           <bool>true</bool>
                          </property>
                          <property name="text">
-                          <string>Custom Gestalt Keys</string>
+                          <string>自定义Key</string>
                          </property>
                         </widget>
                        </item>
@@ -2126,8 +2126,8 @@ QComboBox QAbstractItemView::item:hover {
                      <item>
                       <widget class="QLabel" name="label_12">
                        <property name="text">
-                        <string>Warning: Using this feature incorrectly can lead to bootloops and data loss. Only use if you know
-what you are doing.</string>
+                        <string>警告: 此功能会导致白苹果或者数据丢失. 
+你应该知道你要做什么吧.</string>
                        </property>
                       </widget>
                      </item>
@@ -3057,7 +3057,7 @@ QComboBox QAbstractItemView::item:hover {
                        </font>
                       </property>
                       <property name="text">
-                       <string>Springboard Options</string>
+                       <string>Springboard 设置</string>
                       </property>
                      </widget>
                     </item>
@@ -3138,7 +3138,7 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QLabel" name="label_13">
                    <property name="text">
-                    <string>Lock Screen Footnote Text</string>
+                    <string>锁屏显示文字</string>
                    </property>
                   </widget>
                  </item>
@@ -3167,42 +3167,42 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QCheckBox" name="disableLockRespringChk">
                    <property name="text">
-                    <string>Disable Lock After Respring</string>
+                    <string>Respring不锁屏</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="disableDimmingChk">
                    <property name="text">
-                    <string>Disable Screen Dimming While Charging</string>
+                    <string>充电时禁用屏幕变暗</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="disableBatteryAlertsChk">
                    <property name="text">
-                    <string>Disable Low Battery Alerts</string>
+                    <string>禁用低电量警报</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="disableCrumbChk">
                    <property name="text">
-                    <string>Disable Breadcrumbs</string>
+                    <string>禁用痕迹导航</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="enableSupervisionTextChk">
                    <property name="text">
-                    <string>Show Supervision Text on Lock Screen</string>
+                    <string>在锁屏界面上显示监督文本</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="enableAirPlayChk">
                    <property name="text">
-                    <string>Enable AirPlay support for Stage Manager</string>
+                    <string>为 Stage Manager 启用 AirPlay 支持</string>
                    </property>
                   </widget>
                  </item>
@@ -3453,14 +3453,14 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QCheckBox" name="appStoreChk">
                    <property name="text">
-                    <string>Enable App Store Debug Gesture</string>
+                    <string>启用 App Store 调试手势</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="notesChk">
                    <property name="text">
-                    <string>Enable Notes Debug Mode</string>
+                    <string>启用 Notes 调试模式</string>
                    </property>
                   </widget>
                  </item>
@@ -3482,21 +3482,21 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QCheckBox" name="showTouchesChk">
                    <property name="text">
-                    <string>Show Touches With Debug Info</string>
+                    <string>显示带有调试信息的触摸</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="hideRespringChk">
                    <property name="text">
-                    <string>Hide Respring Icon</string>
+                    <string>隐藏 Respring 图标</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="enableWakeVibrateChk">
                    <property name="text">
-                    <string>Vibrate on Raise-to-Wake</string>
+                    <string>在 Raise-to-Wake 上振动</string>
                    </property>
                   </widget>
                  </item>
@@ -3518,14 +3518,14 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QCheckBox" name="pasteSoundChk">
                    <property name="text">
-                    <string>Play Sound on Paste</string>
+                    <string>在粘贴时播放声音</string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QCheckBox" name="notifyPastesChk">
                    <property name="text">
-                    <string>Show Notifications for System Pastes</string>
+                    <string>显示系统粘贴的通知</string>
                    </property>
                   </widget>
                  </item>
@@ -4461,6 +4461,9 @@ QComboBox QAbstractItemView::item:hover {
                  </item>
                  <item>
                   <widget class="QLineEdit" name="supervisionOrganization">
+                   <property name="text">
+                    <string>输入名称</string>
+                   </property>
                    <property name="placeholderText">
                     <string>Enter Organization Name</string>
                    </property>
@@ -4485,7 +4488,7 @@ QComboBox QAbstractItemView::item:hover {
                  <item>
                   <widget class="QLabel" name="label_15">
                    <property name="text">
-                    <string>* Note: Skip Setup may cause issues with configuration profiles. Turn it off if you need that.</string>
+                    <string>* 注意：跳过设置可能会导致配置文件出现问题。如果需要，请将其关闭。</string>
                    </property>
                   </widget>
                  </item>
@@ -4512,7 +4515,7 @@ QComboBox QAbstractItemView::item:hover {
                    <item>
                     <widget class="QToolButton" name="resetPairBtn">
                      <property name="text">
-                      <string>Reset Device Pairing</string>
+                      <string>重置配对</string>
                      </property>
                     </widget>
                    </item>
@@ -4609,7 +4612,7 @@ QComboBox QAbstractItemView::item:hover {
                        </font>
                       </property>
                       <property name="text">
-                       <string>Location Simulation</string>
+                       <string>修改定位</string>
                       </property>
                      </widget>
                     </item>
